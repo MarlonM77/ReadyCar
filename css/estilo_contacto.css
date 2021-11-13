@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(18, 18, 19);
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+
+.header_container{
+    max-width: 100%;
+    margin-left: 50px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    display: inline-block;
+}
+
+.menu nav ul li{
+    list-style: none;
+}
+
+.menu nav ul li .nav2{
+    text-decoration: none;
+}
+
+.nav2{
+    height: 50px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.nav2:hover{
+    background-color: white;
+    color: rgb(229, 65, 45 );
+    transform: scale(1.1);
+}
+
+.menu li i{
+    padding: 10px;
+}
+
+.body_container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body_container.contactos{
+    display: flex;
+    align-items: center;
+}
+
+.body_container .contactos h2{
+    padding-top: 70px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 38px;
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+.body_container .contactos p{
+    padding-top: 10px;
+    padding-bottom: 90px;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+#content{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+#content .Contenido{
+    display: flex;;
+    box-sizing: border-box;
+}
+
+.Contenido h4{
+    font-size: 35px;
+    font-family: monospace;
+    line-height: 1.5em;
+    align-items: left;
+    margin-left: 300px ;
+    padding-top: 10px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    color: rgb(229, 65, 45);
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: flex;
+}
+
+.lista ul{
+    padding-top: 50px;
+    padding-left: 300px;
+}
+
+.lista ul li{
+    font-family: monospace;
+    font-size: 25px;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+
+.lista ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.lista ul li a:hover{
+    color: #37C751;
+}
+
+.img{
+    margin: 0;
+    padding-left: 600px;
+    border: 0;
+    vertical-align: baseline;
+    display: flex;
+
+}
+.img img{
+    width: 500px;
+    height: 400px; 
+    position: relative;
+    bottom: 300px;
+    left: 200px;
+}
+.net .vinculo{
+    position: relative;
+    left: 350px;
+    bottom: 200px;
+    display: inline-flex;  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
+.net .vinculo li{   
+    list-style: none;
+    display: inline-flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.net ul li .contact{ 
+    color: rgb(18, 18, 19);
+    padding: 20px;
+    background-color: rgb(221, 107, 72);
+}
+
+.net ul li .contact1{ 
+    color: rgb(18, 18, 19);
+    padding: 20px;
+    background-color: rgb(221, 107, 72);
+}
+
+.net ul li .contact1:hover{ 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color:  #005499;
+    transform: scale(1.1);
+}
+
+.net ul li .contact:hover{ 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color:  #37C751;
+    transform: scale(1.1);
+}
+
+/**--------------------------------------------Responsive-------------*/
+
+/*menu*/
+.header_container #icon-menu2{
+    color: rgb(229, 65, 45 );
+    background-color: rgb(165, 165, 165);
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+}
+
+#icon-menu:hover{
+    opacity: 0.8;
+    transition: ease 1s;
+    transform: scale(1);
+}
+
+@media screen and (max-width: 1521px){
+    #content{
+        flex-direction: column;
+        display: grid;
+    }
+    .img{
+        display: none;
+    }
+    .net .vinculo{
+        position: relative;
+        top: 100px;
+        left: 150px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1261px){
+    .net .vinculo{
+        position: relative;
+        top: 100px;
+        left: 0px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1261px){
+    .net{
+        position: absolute;
+        left: 190px;
+    }
+}
+
+@media screen and (max-width: 1005px){
+    .net{
+        position: absolute;
+        left: 100px;
+    }
+    .lista{
+        margin: 0 auto;
+    }
+    .lista ul{
+        margin: 0 auto;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 965px){
+    .header_container #icon-menu2{
+        display: flex;
+    }
+    
+    .header_container .menu{
+        left: 0;
+        top: 50px;
+        width: 300px;
+        height: 100vh;
+        position:fixed;
+        transform: translateX(-200%); 
+        filter: blur(0);      
+    }
+    
+    .menu3{
+        transform: translateX(0%); 
+    }
+    
+    .menu nav{
+        padding-top: 20px;
+        width: 300px;
+        height: 100vh;
+        top: 75px;
+        background: #000000df;
+        box-shadow: 10px 0 20px -15px rgb(187, 187, 187);
+        text-align: center;   
+        flex-direction: column;
+    }
+    
+    .menu nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        
+    }
+    
+    .menu ul li a{
+        cursor: pointer;
+        padding-left: 0;
+        padding-right: 0;
+        left: 40px;
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+    
+    .menu ul li a:hover{
+        cursor: pointer;
+        background-color:rgba(229, 67, 45, 0.712);
+        color: #f2f2f2;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .body_container .contactos h2 {
+        font-size: 35px;
+    }
+    .body_container .contactos p {
+        font-size: 26px;
+    }
+    .Contenido{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .Contenido h4{
+        font-size: 35px;
+        padding: 0;
+        margin: 0 auto;
+        display: grid;
+    }
+    .net .vinculo{
+        position: relative;
+        top: 50px;
+        left: -60px;
+        margin: 0 auto;
+    }
+    .net .vinculo li{
+        font-size: 20px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .vinculo{
+        left: 0;
+    }
+    .net .vinculo{
+    padding-left: 10px;
+    flex-direction: column-reverse;
+    }
+    .vinculo .bin{
+        width: 100%;
+    }
+    .lista ul li marker{
+        display: grid;
+        font-size: 1px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    
+    .body_container .contactos h2{
+        padding-top: 30px;
+    }
+    .logo h1{
+        font-size: 15px;
+        padding-right: 20px;
+        display: grid;
+    }
+    .header_container{
+        justify-content: space-evenly;
+    }
+    .Contenido h4{
+        padding-top: 0;
+        font-size: 28px;
+    }
+    .body_container .contactos h2 {
+        font-size: 28px;
+    }
+    .body_container .contactos p {
+        font-size: 18px;
+    }
+    .net .vinculo li{
+        padding-right: 0;
+        padding-left: 0;
+        display: grid;
+    }
+    .lista ul li{
+        font-size: 20px;
+        display: grid;
+        margin: 0 10px;
+    }
+    .Contenido{
+        padding: 0;
+    }
+    .body_container .contactos p {
+        padding: 20px;
+    }
+}
